@@ -8,8 +8,16 @@
     background: #ffffff;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 15px 15px 0 0;
-    padding: 25px 20px;
-    padding-bottom: 120px;
+    padding: 25px 20px 0;
+    /* padding-bottom: 120px; */
+    max-height: calc(100vh - 60px);
+    padding-top: 80px;
+    /* position: sticky; */
+    /* top: 60px; */
+    overflow: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
@@ -17,6 +25,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 36px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    background: white;
   }
 
   .title {
@@ -60,6 +74,12 @@
     border-radius: 60px;
     height: 60px;
     width: 60px;
+  }
+
+  .list {
+    padding: 20px 0 80px;
+    overflow: auto;
+    flex: 1;
   }
 </style>
 
